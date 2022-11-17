@@ -8,9 +8,9 @@
 
     <WebView
         android:id="@+id/webView"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,13 +18,13 @@
 
     <EditText
         android:id="@+id/editTextURL"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="200dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="https://"
-        app:layout_constraintBottom_toTopOf="@+id/webView"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,22 +32,19 @@
     <Button
         android:id="@+id/goButton"
         android:layout_width="100dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:text="Go"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/webView"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/editTextURL"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/refreshButton"
         android:layout_width="100dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginStart="100dp"
         android:text="Refresh"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/webView"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/editTextURL"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
